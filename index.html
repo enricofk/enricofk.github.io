@@ -6,10 +6,13 @@
     <title>Portofolio Enrico Felix</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
     <style>
         body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
-        .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 60px 20px; border-radius: 0 0 50px 50px; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
+        .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 80px 20px; border-radius: 0 0 50px 50px; }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
+        .card:hover { transform: translateY(-5px); transition: 0.3s; }
     </style>
 </head>
 <body>
@@ -17,39 +20,95 @@
     <div class="hero-section text-center mb-5">
         <img src="https://github.com/enricofk.png" alt="Foto Profil" class="profile-img mb-3 shadow">
         <h1 class="fw-bold">Enrico Felix</h1>
-        <p class="lead">Information Systems Student & Backend Developer Intern</p>
+        <p class="lead fs-4">Information Systems Student & Fullstack Developer</p>
+        
+        <div class="mt-4">
+            <a href="https://github.com/enricofk" target="_blank" class="btn btn-light fw-bold me-2">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="mailto:emailmu@contoh.com" class="btn btn-outline-light fw-bold">
+                <i class="bi bi-envelope-fill"></i> Email
+            </a>
+        </div>
     </div>
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 
                 <div class="card shadow-sm border-0 mb-4">
-                    <div class="card-body">
+                    <div class="card-body p-4">
                         <h3 class="card-title text-primary mb-3">👋 Tentang Saya</h3>
                         <p class="card-text text-secondary">
                             Halo! Saya mahasiswa semester 5 di Universitas Multimedia Nusantara. 
-                            Saat ini saya sedang magang di <strong>PT Accelist Lentera Indonesia</strong> sebagai Backend Developer.
-                            Saya memiliki passion mendalam di teknologi Microsoft (.NET Core) dan Database Management.
+                            Saat ini saya sedang magang di <strong>PT Accelist Lentera Indonesia</strong> sebagai Fullstack Developer.
+                            Saya memiliki kemampuan mengembangkan aplikasi web dari sisi depan (Frontend) hingga belakang (Backend), 
+                            dengan spesialisasi di ekosistem Microsoft .NET.
                         </p>
                     </div>
                 </div>
 
-                <div class="card shadow-sm border-0 mb-4">
-                    <div class="card-body">
+                <div class="card shadow-sm border-0 mb-5">
+                    <div class="card-body p-4">
                         <h3 class="card-title text-primary mb-3">🚀 Tech Stack</h3>
                         <div class="d-flex flex-wrap gap-2">
-                            <span class="badge bg-primary">C#</span>
-                            <span class="badge bg-primary">.NET Core</span>
-                            <span class="badge bg-secondary">SQL Server</span>
-                            <span class="badge bg-secondary">PostgreSQL</span>
-                            <span class="badge bg-dark">Git</span>
+                            <span class="badge bg-primary p-2">C#</span>
+                            <span class="badge bg-primary p-2">.NET Core</span>
+                            <span class="badge bg-info text-dark p-2">SQL Server</span>
+                            <span class="badge bg-info text-dark p-2">PostgreSQL</span>
+                            <span class="badge bg-warning text-dark p-2">HTML/CSS</span>
+                            <span class="badge bg-warning text-dark p-2">Bootstrap 5</span>
+                            <span class="badge bg-dark p-2">Git & GitHub</span>
                         </div>
                     </div>
                 </div>
 
+                <h3 class="text-center mb-4 fw-bold text-secondary">💻 Karya Terbaru</h3>
+                <div class="row">
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-git text-danger fs-1 me-3"></i>
+                                    <h5 class="card-title fw-bold mb-0">Demo Git 2025</h5>
+                                </div>
+                                <p class="card-text text-muted small">
+                                    Simulasi pengelolaan version control system (VCS) menggunakan Git. 
+                                    Mencakup praktik branching, merging, conflict resolution, dan manajemen repository.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark border">Git CLI</span>
+                                    <span class="badge bg-light text-dark border">Team Collaboration</span>
+                                </div>
+                                <a href="https://github.com/enricofk/demo-git-2025" target="_blank" class="btn btn-outline-primary w-100">Lihat Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-laptop text-success fs-1 me-3"></i>
+                                    <h5 class="card-title fw-bold mb-0">Personal Portfolio</h5>
+                                </div>
+                                <p class="card-text text-muted small">
+                                    Website portofolio responsive yang dibangun dengan HTML5, CSS3, dan Bootstrap 5. 
+                                    Di-hosting secara otomatis (CI/CD sederhana) menggunakan GitHub Pages.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark border">Bootstrap 5</span>
+                                    <span class="badge bg-light text-dark border">Frontend</span>
+                                </div>
+                                <a href="https://github.com/enricofk/enricofk.github.io" target="_blank" class="btn btn-outline-primary w-100">Lihat Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="text-center text-muted mt-5 mb-5">
-                    <small>&copy; 2026 Enrico Felix. Powered by GitHub Pages & Bootstrap 5.</small>
+                    <small>&copy; 2026 Enrico Felix. Built with Bootstrap 5.</small>
                 </div>
 
             </div>
