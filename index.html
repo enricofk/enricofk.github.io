@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Enrico Felix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f0f0f0; }
-        h1 { color: #2c3e50; }
-        p { color: #555; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 60px 20px; border-radius: 0 0 50px 50px; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Halo, Saya Enrico Felix! 👋</h1>
-        <p>Mahasiswa Sistem Informasi & Backend Developer Intern</p>
-        <hr>
-        <p>Selamat datang di website portofolio pertama saya.</p>
-        <p>🚀 <i>Powered by GitHub Pages</i></p>
+
+    <div class="hero-section text-center mb-5">
+        <img src="https://github.com/enricofk.png" alt="Foto Profil" class="profile-img mb-3 shadow">
+        <h1 class="fw-bold">Enrico Felix</h1>
+        <p class="lead">Information Systems Student & Backend Developer Intern</p>
     </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary mb-3">👋 Tentang Saya</h3>
+                        <p class="card-text text-secondary">
+                            Halo! Saya mahasiswa semester 5 di Universitas Multimedia Nusantara. 
+                            Saat ini saya sedang magang di <strong>PT Accelist Lentera Indonesia</strong> sebagai Backend Developer.
+                            Saya memiliki passion mendalam di teknologi Microsoft (.NET Core) dan Database Management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary mb-3">🚀 Tech Stack</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">C#</span>
+                            <span class="badge bg-primary">.NET Core</span>
+                            <span class="badge bg-secondary">SQL Server</span>
+                            <span class="badge bg-secondary">PostgreSQL</span>
+                            <span class="badge bg-dark">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-muted mt-5 mb-5">
+                    <small>&copy; 2026 Enrico Felix. Powered by GitHub Pages & Bootstrap 5.</small>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
