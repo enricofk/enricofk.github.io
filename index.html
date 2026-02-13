@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        body { font-family: 'Poppins', sans-serif; transition: background-color 0.3s, color 0.3s; }
         .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 80px 20px; border-radius: 0 0 50px 50px; }
         .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
-        .card:hover { transform: translateY(-5px); transition: 0.3s; }
+        .card { transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
     </style>
 </head>
 <body>
@@ -22,13 +23,16 @@
         <h1 class="fw-bold">Enrico Felix</h1>
         <p class="lead fs-4">Information Systems Student & Fullstack Developer</p>
         
-        <div class="mt-4">
-            <a href="https://github.com/enricofk" target="_blank" class="btn btn-light fw-bold me-2">
+        <div class="mt-4 d-flex justify-content-center gap-2 flex-wrap">
+            <a href="https://github.com/enricofk" target="_blank" class="btn btn-light fw-bold">
                 <i class="bi bi-github"></i> GitHub
             </a>
-            <a href="mailto:emailmu@contoh.com" class="btn btn-outline-light fw-bold">
+            <a href="mailto:enrico.khosalim@gmail.com" class="btn btn-outline-light fw-bold">
                 <i class="bi bi-envelope-fill"></i> Email
             </a>
+            <button onclick="toggleTheme()" id="theme-btn" class="btn btn-dark fw-bold border-light">
+                <i class="bi bi-moon-stars-fill"></i> Dark Mode
+            </button>
         </div>
     </div>
 
@@ -115,5 +119,28 @@
         </div>
     </div>
 
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-bs-theme', newTheme);
+            
+            // Ubah text button & icon sesuai mode
+            const btn = document.getElementById('theme-btn');
+            if (newTheme === 'dark') {
+                btn.innerHTML = '<i class="bi bi-sun-fill"></i> Light Mode';
+                btn.classList.remove('btn-dark');
+                btn.classList.add('btn-light');
+                btn.classList.add('text-dark'); // Agar tulisan terbaca di tombol putih
+            } else {
+                btn.innerHTML = '<i class="bi bi-moon-stars-fill"></i> Dark Mode';
+                btn.classList.remove('btn-light');
+                btn.classList.remove('text-dark');
+                btn.classList.add('btn-dark');
+            }
+        }
+    </script>
 </body>
 </html>
