@@ -24,9 +24,28 @@
         
         .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 60px 20px 100px 20px; border-radius: 0 0 50px 50px; margin-top: -1px; }
         .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
-        .card { transition: transform 0.3s; }
-        .card:hover { transform: translateY(-10px); }
         
+        .card { transition: transform 0.3s, background-color 0.3s, border-color 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+
+        [data-bs-theme="dark"] body {
+            background-color: #121212 !important;
+        }
+        
+        [data-bs-theme="dark"] .card {
+            background-color: #1e1e1e; 
+            border: 1px solid #333;   
+            color: #ffffff;            
+        }
+
+        [data-bs-theme="dark"] .text-secondary {
+            color: #b0b3b8 !important; 
+        }
+        
+        [data-bs-theme="dark"] .text-muted {
+            color: #adb5bd !important;
+        }
+
         .typing-cursor::after {
             content: '|';
             animation: blink 1s infinite;
