@@ -1,32 +1,49 @@
-# 🌐 Portofolio Enrico Felix
+# Portofolio Enrico Felix
+Repository ini berisi website portofolio pribadi saya yang digunakan untuk menampilkan profil profesional, keahlian teknis, serta proyek-proyek yang pernah saya kerjakan sebagai Fullstack Developer.
 
-![Portfolio Preview](https://via.placeholder.com/1000x500?text=Preview+Website+Enrico)
-Selamat datang di repository website portofolio pribadi saya. Website ini dirancang untuk menampilkan profil profesional, keahlian teknis (Tech Stack), dan proyek-proyek terbaru saya sebagai **Fullstack Developer**.
+Live Website:
+https://enricofk.github.io
 
-🔗 **Live Demo:** [https://enricofk.github.io](https://enricofk.github.io)
+## Tentang Website
+Website ini saya bangun sebagai media untuk memperkenalkan diri secara profesional dan mendokumentasikan perjalanan pengembangan kemampuan teknis saya. Seluruh struktur dan tampilan dibuat secara manual tanpa menggunakan website builder instan agar memberikan fleksibilitas penuh dalam pengembangan dan pengelolaan kode.
 
-## 🚀 Fitur Utama
-* **Responsive Design:** Tampilan rapi di Desktop, Tablet, dan Mobile.
-* **Dark Mode Toggle:** Mendukung tema gelap dan terang (menggunakan JavaScript & CSS Variables).
-* **Project Showcase:** Bagian khusus untuk menampilkan repository GitHub lain.
-* **Social Links:** Integrasi langsung ke Email dan GitHub Profile.
+Di dalamnya terdapat:
+1. Profil singkat dan latar belakang
+2. Daftar software yang saya gunakan
+3. Showcase project terbaru
+4. Tautan langsung ke GitHub dan email
 
-## 🛠️ Teknologi yang Digunakan
-Website ini dibangun tanpa *site builder* instan, melainkan menggunakan kode murni:
-* **Frontend:** HTML5, CSS3
-* **Styling:** Bootstrap 5.3 (CDN)
-* **Logic:** Vanilla JavaScript (untuk fitur Dark Mode)
-* **Hosting:** GitHub Pages
-* **Version Control:** Git
+## Fitur Utama
+1. Responsive Design => Tampilan website dirancang agar optimal di berbagai perangkat, mulai dari desktop hingga mobile.
+2. Dark Mode & Light Mode => Pengguna dapat mengganti tema sesuai preferensi. Fitur ini dikembangkan menggunakan JavaScript dan CSS Variables.
+3. Project Showcase => Bagian khusus untuk menampilkan proyek yang terhubung langsung ke repository GitHub.
+4. Integrasi Kontak => Tersedia tautan langsung ke email dan profil GitHub untuk memudahkan komunikasi dan kolaborasi.
 
-## 📦 Cara Menjalankan di Lokal
-Jika ingin melihat kode ini di komputermu:
+## Software dan Tools yang Digunakan
 
-1.  Clone repository ini:
-    ```bash
-    git clone [https://github.com/enricofk/enricofk.github.io.git](https://github.com/enricofk/enricofk.github.io.git)
-    ```
-2.  Buka file `index.html` di browser favoritmu.
+Website ini dikembangkan menggunakan:
+- HTML5
+- CSS3
+- Bootstrap 5.3 (CDN)
+- Vanilla JavaScript
+- Visual Studio Code
+- Git untuk version control
+- GitHub Pages untuk deployment
 
----
-⭐ *Jangan lupa kasih Star di pojok kanan atas jika proyek ini membantu!*
+Pendekatan ini dipilih untuk menjaga performa tetap ringan, struktur kode tetap terorganisir, dan proses deployment tetap sederhana.
+
+## Cara Menjalankan Secara Lokal
+
+Untuk menjalankan project ini di komputer lokal:
+
+1. Clone repository:
+git clone https://github.com/enricofk/enricofk.github.io.git
+
+2. Buka file index.html menggunakan browser.
+Karena website ini bersifat statis, tidak diperlukan instalasi dependency tambahan.
+
+# Penutup
+
+Website ini akan terus diperbarui seiring bertambahnya pengalaman dan proyek yang saya kerjakan.
+
+Jika repository ini bermanfaat atau menginspirasi, Anda dapat memberikan star sebagai bentuk apresiasi.
